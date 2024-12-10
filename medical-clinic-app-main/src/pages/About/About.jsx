@@ -3,11 +3,12 @@ import React, { useRef, useState } from 'react'
 //import {firestore} from '../firebase';
 //import {addDoc,collection} from '@firebase/firestore';
 import homedoctod from "../../assets/homeAssets/homedoctod.jpg";
+import FooterSection from '../../components/homeComps/FooterSection';
 
 const About = () => {
   return (
-    <div className=" min-h-screen p-6 flex flex-col items-center justify-center">
-      <div className="bg-white rounded-lg shadow-xl p-8 max-w-3xl mx-auto text-center">
+    <div className=" min-h-screen p-6 ">
+      <div className="bg-white rounded-lg shadow-xl p-8 max-w-3xl mx-auto text-center min-h-screen p-6 flex flex-col items-center justify-center">
         <h1 className="text-5xl text-blue-700 font-bold mb-6">Medical Clinc Management System</h1>
         <p className="text-xl font-semibold mb-8 text-gray-700">"Your Health, Our Priority"</p>
         
@@ -43,7 +44,12 @@ const About = () => {
           </div>
         </div>
       </div>
+      <FooterSection />
     </div>
+    
+    
+
+
   );
 }
 

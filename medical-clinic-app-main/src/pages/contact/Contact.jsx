@@ -1,4 +1,5 @@
 import React from 'react'
+import FooterSection from '../../components/homeComps/FooterSection';
 
 const Contact = () => {
   const [contactInfo, setContactInfo] = React.useState({
@@ -64,6 +65,7 @@ const Contact = () => {
           <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
         </div>
       </div>
+      <FooterSection />
     </div>
   );
 }
