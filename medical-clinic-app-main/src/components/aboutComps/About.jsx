@@ -1,16 +1,16 @@
 import React, { useRef, useState } from 'react'
-//import { Button, Form } from 'react-bootstrap';
-//import {firestore} from '../firebase';
-//import {addDoc,collection} from '@firebase/firestore';
 import homedoctod from "../../assets/homeAssets/homedoctod.jpg";
 import FooterSection from '../../components/homeComps/FooterSection';
+//items-center
+
 
 const About = () => {
   return (
     <div className=" min-h-screen p-6 ">
-      <div className="bg-white rounded-lg shadow-xl p-8 max-w-3xl mx-auto text-center min-h-screen p-6 flex flex-col items-center justify-center">
-        <h1 className="text-5xl text-blue-700 font-bold mb-6">Medical Clinc Management System</h1>
-        <p className="text-xl font-semibold mb-8 text-gray-700">"Your Health, Our Priority"</p>
+       <h1 className="text-2xl font-bold text-gray-800 mb-4">Medical Clinc Management System</h1>
+       <p className="text-gray-600 mb-6">"Your Health, Our Priority"</p>
+      <div className="bg-gray-200 rounded-lg shadow-xl p-8 max-w-1xl mx-auto  min-h-screen p-6 flex flex-col  justify-center">
+       
         
         <div className="grid md:grid-cols-2 gap-10">
           <div className="mb-6 md:mb-0">
@@ -47,9 +47,6 @@ const About = () => {
       <FooterSection />
     </div>
     
-    
-
-
   );
 }
 

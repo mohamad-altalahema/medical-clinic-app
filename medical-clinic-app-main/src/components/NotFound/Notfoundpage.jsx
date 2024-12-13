@@ -27,11 +27,50 @@ export default class Notfoundpage extends Component {
 
 export default function Notfoundpage() {
     return(
-        <main className="grid min-h-[50vh] place-items-center px-6
+        <div className="flex items-center justify-center min-h-screen bg-gray-200">
+        <div className="text-center">
+          <h1 className="text-7xl font-bold text-blue-400">404</h1>
+          <p className="text-3xl text-gray-600 mt-4">Oops! Page not found</p>
+          <p className="mt-2 text-gray-500">Sorry, we couldn't find the page you're looking for.</p>
+          <a
+            href="/"
+            className="mt-6 inline-block px-6 py-3 text-white bg-blue-400 rounded-lg hover:bg-blue-600 transition duration-300"
+          >
+            Go back to Home
+          </a>
+        </div>
+      </div>
+    )
+}
+
+
+
+/**
+ * import React from "react";
+import { useLocation } from "react-router-dom";
+
+function NotFound() {
+  const deployedURL = window.location.href;
+  const location = useLocation();
+
+  return (
+    <div>
+      <h1>Page Not Found</h1>
+      <p>The requested URL {deployedURL} was not found on this server.</p>
+      <p>The requested URL {location.pathname} was not found on this server.</p>
+    </div>
+  );
+}
+
+export default NotFound;
+ */
+
+/**
+ * <main className="grid min-h-[50vh] place-items-center px-6
         py-24 sm:py-32 lg:px-8  error-page"
     
         >
-            <div className="text-center  py-8 sm:px-24 sm:py-8 bg-teal-900/50 
+            <div className="text-center  py-8 sm:px-24 sm:py-8 bg-teal-900/40 
             rounded-lg backdrop-blur">
                 <p className="sm:text-3xl font-semibold text-gray-600">404</p>
                 <h1 className="mt-4 text-3xl font-extrabold tracking-tight
@@ -54,5 +93,4 @@ export default function Notfoundpage() {
                 </div>
             </div>
         </main>
-    )
-}
+ */
